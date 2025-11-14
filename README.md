@@ -1,4 +1,4 @@
-# Rapid Photo Sorter V2
+# AI Generated Photo Tagging
 
 A desktop application for rapidly sorting and tagging large photo collections with AI assistance.
 
