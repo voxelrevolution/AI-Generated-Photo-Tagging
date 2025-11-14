@@ -1,6 +1,3 @@
-# AI-Generated-Photo-Tagging
-Sort and tag thousands of photos fast using AI vision analysis, automatic voice transcription, and interactive tag curation
-
 # Rapid Photo Sorter V2
 
 A desktop application for rapidly sorting and tagging large photo collections with AI assistance.
@@ -39,7 +36,7 @@ See [SETUP.md](SETUP.md) for detailed installation instructions and troubleshoot
 
 ---
 
-## Documentation
+## 📖 Documentation
 
 ### 1. V1 Summary
 
@@ -53,13 +50,13 @@ Version 1.0 of the Rapid Photo Sorter was a resounding success. It delivered a s
 *   Permanent EXIF metadata tagging for "kept" files.
 *   Safe, non-destructive sorting into `sorted_kept` and `sorted_deleted` folders.
 
-## 2. Vision & Goals
+## 2. V2 Vision & Goals
 
-
+The vision for V2 is to evolve the Rapid Photo Sorter from a powerful assistant into a semi-autonomous agent. While V1 required the user to provide all initial tags via voice or text, V2 will leverage advanced AI capabilities to **proactively suggest tags** based on the image content itself.
 
 The primary goal is to further reduce the user's workload by automating the initial analysis of each photo, turning the user's role from a "tag creator" into a "tag curator."
 
-**High-Level Goals:**
+**High-Level Goals for V2:**
 1.  **Autonomous Image Analysis**: Implement a multi-modal AI model (like LLaVA) to "see" the image and generate a descriptive list of initial tags automatically.
 2.  **Human-in-the-Loop Workflow**: The AI-generated tags will populate the tag box automatically. The user can then:
     *   Accept the tags as-is.
@@ -68,7 +65,11 @@ The primary goal is to further reduce the user's workload by automating the init
 3.  **Enhanced AI Reasoning**: Improve the AI's ability to recognize context, identify recurring subjects (e.g., "the family dog"), and suggest more nuanced or thematic tags.
 4.  **Configuration and Settings**: Introduce a settings panel to allow users to configure AI parameters, such as the level of detail in auto-tagging or custom name lists.
 
-### 2.1 Implementation Status 
+V2 marks the transition from a "do what I say" tool to a "do what I mean" collaborative partner in the photo management process.
+
+### 2.1 V2 Implementation Status ✅
+
+**Version 2.0 is complete and delivers all core goals:**
 
 ✅ **Autonomous Image Analysis**: LLaVA vision model analyzes images automatically on load  
 ✅ **Human-in-the-Loop Workflow**: AI tags appear as interactive pills, user curates by deleting unwanted tags  
@@ -78,7 +79,7 @@ The primary goal is to further reduce the user's workload by automating the init
 
 **See [agent_work_logs/](agent_work_logs/) for complete development history and technical documentation.**
 
-##  Architecture
+## 🔧 Architecture
 
 **Modular Structure:**
 - `app/ai/` - Vision analysis and tag processing (LLaVA, Llama 3.1)
@@ -91,15 +92,10 @@ The primary goal is to further reduce the user's workload by automating the init
 - Ollama server (localhost:11434) for AI models
 - Google Speech Recognition API for voice transcription
 
-##  License
+## 📝 License
 
-MIT License - Copyright (c) 2025 Thomas Strimbu
+[Add your license here]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-
+## 🤝 Contributing
 
 Contributions welcome! Please see development guidelines in [docs/PROJECT_GUIDELINES.md](docs/PROJECT_GUIDELINES.md).
