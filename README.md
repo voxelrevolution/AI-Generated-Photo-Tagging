@@ -79,7 +79,7 @@ You are free to:
 - Modify and adapt the code
 - Distribute copies
 
-**Requirement**: Please credit Thomas Strimbu as the original author.
+**Requirement**: Please credit Thom Strimbu as the original author.
 
 THE SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND.
 
